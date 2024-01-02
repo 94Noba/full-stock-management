@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name="founisseurs", uniqueConstraints = {
+@Table(name="fournisseurs", uniqueConstraints = {
         @UniqueConstraint(name = "UQ_FOURNISSEURS_TELEPHONE", columnNames = {"telephone"}),
         @UniqueConstraint(name = "UQ_FOURNISSEURS_EMAIL", columnNames = {"email"})
 })
@@ -29,10 +29,10 @@ public class Fournisseur {
     @Column(name="email", columnDefinition = "varchar not null")
     private String email;
 
-    @Column(name = "fax", columnDefinition = "varchar")
+    @Column(name = "fax")
     private String fax;
 
-    @Column(name = "addresse", columnDefinition = "varchar")
+    @Column(name = "addresse")
     private String addresse;
 
     public Fournisseur(){}

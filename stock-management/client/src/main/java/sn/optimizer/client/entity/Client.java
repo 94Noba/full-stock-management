@@ -25,7 +25,7 @@ public class Client {
     @Column(name="telephone1", columnDefinition=("varchar(50)"))
     private String telephone1;
 
-    @Column(name="addresse", columnDefinition=("varchar"))
+    @Column(name="addresse")
     private String addresse;
 
     public Client(){}

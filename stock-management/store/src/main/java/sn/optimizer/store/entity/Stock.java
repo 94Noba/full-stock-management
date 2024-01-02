@@ -6,8 +6,8 @@ import java.util.Objects;
 
 @Entity
 @Table(name="stocks", uniqueConstraints = {
-        @UniqueConstraint(name = "UQ_STOCKS_NOM", columnNames = {"nom"}),
-        @UniqueConstraint(name="UQ_STOCKS_TELEPHONE", columnNames = {"telephone"})
+        @UniqueConstraint(name="UQ_STOCKS_NOM", columnNames={"nom"}),
+        @UniqueConstraint(name="UQ_STOCKS_TELEPHONE", columnNames={"telephone"})
 })
 public class Stock {
 
